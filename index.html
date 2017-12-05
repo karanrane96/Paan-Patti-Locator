@@ -1,8 +1,9 @@
 <!DOCTYPE html >
   <head>
+  <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <title>Creating a Store Locator on Google Maps</title>
+    <title>Paan Patti Locator</title>
   <style>
     /* Always set the map height explicitly to define the size of the div
      * element that contains the map. */
@@ -20,8 +21,8 @@
  <script type="text/javascript" id="AgeVerifyScript" data-template="vaping" data-age="18" data-method="DMY" data-cookielength="30" data-prompttextdob="Welcome!<br /><br />Please submit your<br />date of birth to enter." data-yytext="YYYY" data-mmtext="MM" data-ddtext="DD" data-underageredirect="http://www.k7b.co.in" src="https://av.ageverify.co/jsv6/dob.js"></script>
   </head>
   <body style="margin:0px; padding:0px;" onload="initMap()">
-    <div>
-         <label for="raddressInput">Search location:</label>
+    <div style="align:center">
+         <label style=" font-size:25px;" for="raddressInput">Search location:</label>
          <input type="text" id="addressInput" size="15"/>
         <label for="radiusSelect">Radius:</label>
         <select id="radiusSelect" label="Radius">
@@ -31,7 +32,7 @@
           <option value="10">10 kms</option>
         </select>
 
-        <input type="button" id="searchButton" value="Search"/>
+        <input type="button" class="action" id="searchButton" value="Search"/>
     </div>
     <div><select id="locationSelect" style="width: 10%; visibility: hidden"></select></div>
     <div id="map" style="width: 100%; height: 90%"></div>
